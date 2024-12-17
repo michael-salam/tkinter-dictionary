@@ -16,7 +16,8 @@ yoruba_dict = {
     "go": "lo",
     "head": "ori",
     "back": "pada",
-    "yes": "benni"
+    "yes": "benni",
+    "sit": "joko",
 }
 
 def search(word):
