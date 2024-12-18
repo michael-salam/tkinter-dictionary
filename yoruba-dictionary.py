@@ -3,5 +3,7 @@ yoruba_dictionary = {
     "lo": "go",
     "joko": "sit",
     "benni": "yes",
-    "kilode": "what is it?"
+    "kilode": "what is it?",
+    "ori": "head",
+    "owo": "money"
 }
