@@ -3,7 +3,20 @@ yoruba_dictionary = {
     "lo": "go",
     "joko": "sit",
     "benni": "yes",
-    "kilode": "what is it?",
     "ori": "head",
-    "owo": "money"
+    "owo": "money",
+    "ile": "house",
+    "ounje": "food",
+    "omi": "water",
+    "obirin": "woman",
+    "iya": "mother",
+    "oko": "car",
+    "aaye": "space",
+    "oju": "eye",
+    "eti": "ear",
+    "eniyan": "person",
+    "ilekun": "door",
+    "aso": "clothes",
+    "ile": "home",
+    "awo": "plate"
 }
