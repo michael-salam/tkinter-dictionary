@@ -7,7 +7,7 @@ window.geometry("600x250")
 window.title("World Dictionary")
 
 # Input field for user to enter a word
-entry_text = Entry(window, font=("Arial", 10))
+entry_text = Entry(window, font=("Arial", 11))
 entry_text.pack(pady=10)
 
 # Result display
@@ -67,7 +67,7 @@ def search(word):
         result.set("Not found")
 
 # Search button
-search_btn = Button(window, text="Search", command=lambda: search(entry_text.get()), font=("Arial", 10))
+search_btn = Button(window, text="Search", command=lambda: search(entry_text.get()), font=("Arial", 11))
 search_btn.pack(pady=10)
 
 # Run the application
