@@ -74,7 +74,7 @@ yoruba_button = tk.Button(button_frame, text="Yoruba", width=30, pady=5, command
 
 # Replace the text attribute from "LanguageX" to your desired language
 # Replace the "language" parameters in the lambda functions with your corresponding language
-button2 = tk.Button(button_frame, text="japanese", width=30, pady=5, command=lambda:handle_navigate_forward("japanese"))
+button2 = tk.Button(button_frame, text="Japanese", width=30, pady=5, command=lambda:handle_navigate_forward("Japanese"))
 button3 = tk.Button(button_frame, text="Language3", width=30, pady=5, command=lambda:handle_navigate_forward("language3"))
 button4 = tk.Button(button_frame, text="Language4", width=30, pady=5, command=lambda:handle_navigate_forward("language4"))
 button5 = tk.Button(button_frame, text="Language5", width=30, pady=5, command=lambda:handle_navigate_forward("language5"))
