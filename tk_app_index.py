@@ -18,16 +18,19 @@ def handle_navigate_forward(target):
     back_button.pack()
 
 def handle_navigate_back():
-    translation.set("")
-    word_entry.delete(0, tk.END)
-    translation_frame.pack_forget()
-    subheading1.pack()
-    button_frame.pack()
-    yoruba_button.pack()
+    global current_language
+language_frames.items():
+         frames.pack_forget():
+default_language_frame.pack()
+yourba_button.config(text="yourba")
+igbo_button.config(text="igbo") 
+  #(update other button texts if needeed)
+translation_label.config(text="") 
+     word_entry.delete(0,tk.END)  
     # Make sure you change the name of your button here
     button2.pack()
     button3.pack()
-    button4.pack()
+    igbo_button.pack()
     button5.pack()
 
 def translate_word(word, language):
@@ -36,16 +39,18 @@ def translate_word(word, language):
     if language == "yoruba":
         if word in yoruba_dictionary:
             print(yoruba_dictionary[word])
-            translation.set(yoruba_dictionary[word])
+            translation.set(yoruba_dictionary[word]) 
+        elif language =="igbo":
+            if word in 
+  igbo_dictionary: 
+               translation_label.config(text=igbo_dictionary[word]) 
         else:
-            print("Not found")
-            translation.set("Word not found")
-
-    # Check for other languages here (right not we are only checking for the yoruba words)
-    # Make sure your add your dictionary to the ./dictionaries file first 
-
-    else:
-        print("Language not supported")
+            translation_label.config(text="No translation found or spotted")              
+        else:
+            #Handle other languages or display an error message
+             translation_label.config(text="Language not supported")             
+            
+            
 
 root = tk.Tk()
 root.geometry("720x480")
@@ -60,6 +65,22 @@ subheading2 = tk.Label(root, textvariable=subheading2_text, font=("Arial", 15), 
 # Create buttons frame with buttons for each language
 button_frame = tk.Frame(root)
 yoruba_button = tk.Button(button_frame, text="Yoruba", width=30, pady=5, command=lambda:handle_navigate_forward("yoruba"))
+igbo_button = tk.Button(button_frame, text="igbo", width=30,pady=5,command=lambda:handle_navigate_forward("igbo"))
+
+
+def handle_navigate_forward(target):
+    current_language = target
+language_frames.items():
+         frame.pack_forget()
+default_language_frame.pack()
+yourba_button.config(text="yourba") 
+igbo_button.config(text="igbo") 
+# ( update other button texts if needed) 
+#   clear translation and input fields
+
+translation_label.config(text"") 
+     word_entry.delete(0,tk.END)   
+
 
 # Pick a button for your desired language
 # Miracle - button2/language2
@@ -71,7 +92,7 @@ yoruba_button = tk.Button(button_frame, text="Yoruba", width=30, pady=5, command
 # Replace the "language" parameters in the lambda functions with your corresponding language
 button2 = tk.Button(button_frame, text="Language2", width=30, pady=5, command=lambda:handle_navigate_forward("language2"))
 button3 = tk.Button(button_frame, text="Language3", width=30, pady=5, command=lambda:handle_navigate_forward("language3"))
-button4 = tk.Button(button_frame, text="Language4", width=30, pady=5, command=lambda:handle_navigate_forward("language4"))
+button4 = tk.Button(button_frame, text="Igbo_language", width=30, pady=5, command=lambda:handle_navigate_forward("igbo_language"))
 button5 = tk.Button(button_frame, text="Language5", width=30, pady=5, command=lambda:handle_navigate_forward("language5"))
 
 # Create frame for specific language translation
@@ -82,6 +103,10 @@ translate_button = tk.Button(translation_frame, text="Translate", width=30, pady
 translation_label = tk.Label(translation_frame, textvariable=translation, font=("Arial", 15), pady=10)
 back_button = tk.Button(translation_frame, text="Back", width=30, pady=5, command=handle_navigate_back)
 
+word_entry_igbo =tk.entry(igbo_frame,width=30) 
+translate.button_igbo= tk.Button(igbo_frame, text="Translate", width=30, pady=5, command=lambda:translate_word(word_entry.get(),current_language))
+translation_label_igbo =tk.label(translation_frame,text="Back", width=30, pady=5, command=handle_navigate_back)
+
 heading.pack()
 subheading1.pack()
 button_frame.pack()
@@ -90,7 +115,7 @@ yoruba_button.pack()
 # Make sure your change the name of your button here
 button2.pack()
 button3.pack()
-button4.pack()
+igbo_button.pack()
 button5.pack()
 
 root.mainloop()
