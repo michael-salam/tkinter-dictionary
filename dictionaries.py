@@ -1,0 +1,70 @@
+# All dictionaries are to be created here
+# Simply add your dictionary to the file
+
+yoruba_dictionary = {
+    "wa": "come",
+    "lo": "go",
+    "joko": "sit",
+    "benni": "yes",
+    "ori": "head",
+    "owo": "money",
+    "ile": "house",
+    "ounje": "food",
+    "omi": "water",
+    "obirin": "woman",
+    "iya": "mother",
+    "oko": "car",
+    "aaye": "space",
+    "oju": "eye",
+    "eti": "ear",
+    "eniyan": "person",
+    "ilekun": "door",
+    "aso": "clothes",
+    "ile": "home",
+    "awo": "plate"
+} 
+
+igbo_dictionary = {"ehi":"cow",
+                   "bia":"come",
+                   "aziza":"broom",
+                   "oche":"chair",
+                   "ewu":"goat",
+                   "umaka":"children",
+                   "ebubechukwu":"glory of god ",
+                   "water":"mmiri",
+                   "soap":"nncha",
+                   "papa":"Nna",
+                   "mama":"Nnne",
+                   "kedu":"how are you",
+                   "gozie":"goodbye",
+                   "okuko":"chicken",
+                  "akpu":"fufu",
+                   "ututu oma":"good mornings",
+                   "Ehihie oma":"good afternoon",
+                   "Anyasi oma":"good evening",
+                   "dalu":"thank you",
+                   "onyekuzi":"teacher"
+                  }
+
+japanese_dict = {
+    "Hello": "こんにちは (Konnichiwa)",
+    "Goodbye": "さようなら (Sayōnara)",
+    "Thank you": "ありがとう (Arigatō)",
+    "Yes": "はい (Hai)",
+    "No": "いいえ (Iie)",
+    "Please": "お願いします (Onegaishimasu)",
+    "Sorry": "ごめんなさい (Gomen'nasai)",
+    "Excuse me": "すみません (Sumimasen)",
+    "Water": "水 (Mizu)",
+    "Food": "食べ物 (Tabemono)",
+    "Friend": "友達 (Tomodachi)",
+    "Love": "愛 (Ai)",
+    "Family": "家族 (Kazoku)",
+    "House": "家 (Ie)",
+    "School": "学校 (Gakkō)",
+    "Car": "車 (Kuruma)",
+    "Dog": "犬 (Inu)",
+    "Cat": "猫 (Neko)",
+    "Book": "本 (Hon)",
+    "Music": "音楽 (Ongaku)"
+}
