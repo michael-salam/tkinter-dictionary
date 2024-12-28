@@ -38,9 +38,10 @@ def translate_word(word, language):
             print(yoruba_dictionary[word])
             translation.set(yoruba_dictionary[word])
 
-        elif word in japanese_dict:
+    if language == "japanese":
+        if word in japanese_dict:
             print(japanese_dict[word])
-            translation.set(japanese_dict)
+            translation.set(japanese_dict[word])
 
         else:
             print("Not found")
