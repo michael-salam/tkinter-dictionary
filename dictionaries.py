@@ -46,25 +46,27 @@ igbo_dictionary = {"ehi":"cow",
                    "onyekuzi":"teacher"
                   }
 
-japanese_dict = {
-    "こんにちは": "Hello",
-    "さようなら": "Goodbye",
-    "ありがとう": "Thank you",
-    "すみません": "Excuse me / Sorry",
-    "はい": "Yes",
-    "いいえ": "No",
-    "おはよう": "Good morning",
-    "こんばんは": "Good evening",
-    "おやすみ": "Good night",
-    "元気": "Well / Fine",
-    "友達": "Friend",
-    "家族": "Family",
-    "学校": "School",
-    "先生": "Teacher",
-    "学生": "Student",
-    "本": "Book",
-    "猫": "Cat",
-    "犬": "Dog",
-    "日本": "Japan",
-    "食べる": "To eat"
+# Dictionary with 20 Spanish-to-English translations
+spanish_dict = {
+    "hola": "hello",
+    "adios": "goodbye",
+    "por favor": "please",
+    "gracias": "thank you",
+    "si": "yes",
+    "no": "no",
+    "amigo": "friend",
+    "amigos": "friends",
+    "familia": "family",
+    "comida": "food",
+    "agua": "water",
+    "perro": "dog",
+    "gato": "cat",
+    "casa": "house",
+    "escuela": "school",
+    "libro": "book",
+    "coche": "car",
+    "manana": "morning",
+    "noche": "night",
+    "feliz": "happy",
+    "triste": "sad"
 }

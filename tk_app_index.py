@@ -1,7 +1,7 @@
 import tkinter as tk
 
 # All dictionaries are stored in this file
-from dictionaries import japanese_dict, yoruba_dictionary
+from dictionaries import spanish_dict, yoruba_dictionary
 
 def handle_navigate_forward(target):
     global current_language
@@ -25,7 +25,7 @@ def handle_navigate_back():
     button_frame.pack()
     yoruba_button.pack()
     # Make sure you change the name of your button here
-    japanese_dict.pack()
+    spanish_button.pack()
     button3.pack()
     button4.pack()
     button5.pack()
@@ -38,10 +38,10 @@ def translate_word(word, language):
             print(yoruba_dictionary[word])
             translation.set(yoruba_dictionary[word])
 
-    if language == "japanese":
-        if word in japanese_dict:
-            print(japanese_dict[word])
-            translation.set(japanese_dict[word])
+    if language == "spanish":
+        if word in spanish_dict:
+            print(spanish_dict[word])
+            translation.set(spanish_dict[word])
 
         else:
             print("Not found")
@@ -68,14 +68,14 @@ button_frame = tk.Frame(root)
 yoruba_button = tk.Button(button_frame, text="Yoruba", width=30, pady=5, command=lambda:handle_navigate_forward("yoruba"))
 
 # Pick a button for your desired language
-# Saysmiracle - button2/language2
+# Miracle - button2/language2
 # Israel - button3/language3
 # Benedict - button3/language3
 # King David - button4/language4
 
 # Replace the text attribute from "LanguageX" to your desired language
 # Replace the "language" parameters in the lambda functions with your corresponding language
-button2 = tk.Button(button_frame, text="Japanese", width=30, pady=5, command=lambda:handle_navigate_forward("Japanese"))
+spanish_button = tk.Button(button_frame, text="Spanish", width=30, pady=5, command=lambda:handle_navigate_forward("spanish"))
 button3 = tk.Button(button_frame, text="Language3", width=30, pady=5, command=lambda:handle_navigate_forward("language3"))
 button4 = tk.Button(button_frame, text="Language4", width=30, pady=5, command=lambda:handle_navigate_forward("language4"))
 button5 = tk.Button(button_frame, text="Language5", width=30, pady=5, command=lambda:handle_navigate_forward("language5"))
@@ -94,7 +94,7 @@ button_frame.pack()
 yoruba_button.pack()
 
 # Make sure your change the name of your button here
-japanese_dict.pack()
+spanish_button.pack()
 button3.pack()
 button4.pack()
 button5.pack()
