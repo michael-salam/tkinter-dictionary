@@ -1,7 +1,7 @@
 import tkinter as tk
 
 # All dictionaries are stored in this file
-from dictionaries import spanish_dict, yoruba_dictionary
+from dictionaries import *
 
 def handle_navigate_forward(target):
     global current_language
@@ -47,7 +47,7 @@ def translate_word(word, language):
             print("Not found")
             translation.set("Word not found")
 
-    # Check for other languages here (right not we are only checking for the yoruba words)
+    # Check for other languages here (right not we are only checking for the yoruba and spanish words)
     # Make sure your add your dictionary to the ./dictionaries file first 
 
     else:
@@ -66,16 +66,16 @@ subheading2 = tk.Label(root, textvariable=subheading2_text, font=("Arial", 15), 
 # Create buttons frame with buttons for each language
 button_frame = tk.Frame(root)
 yoruba_button = tk.Button(button_frame, text="Yoruba", width=30, pady=5, command=lambda:handle_navigate_forward("yoruba"))
+spanish_button = tk.Button(button_frame, text="Spanish", width=30, pady=5, command=lambda:handle_navigate_forward("spanish"))
 
 # Pick a button for your desired language
-# Miracle - button2/language2
+# Miracle - button2/language2 [DONE]
 # Israel - button3/language3
 # Benedict - button3/language3
 # King David - button4/language4
 
 # Replace the text attribute from "LanguageX" to your desired language
 # Replace the "language" parameters in the lambda functions with your corresponding language
-spanish_button = tk.Button(button_frame, text="Spanish", width=30, pady=5, command=lambda:handle_navigate_forward("spanish"))
 button3 = tk.Button(button_frame, text="Language3", width=30, pady=5, command=lambda:handle_navigate_forward("language3"))
 button4 = tk.Button(button_frame, text="Language4", width=30, pady=5, command=lambda:handle_navigate_forward("language4"))
 button5 = tk.Button(button_frame, text="Language5", width=30, pady=5, command=lambda:handle_navigate_forward("language5"))
@@ -92,9 +92,9 @@ heading.pack()
 subheading1.pack()
 button_frame.pack()
 yoruba_button.pack()
+spanish_button.pack()
 
 # Make sure your change the name of your button here
-spanish_button.pack()
 button3.pack()
 button4.pack()
 button5.pack()
