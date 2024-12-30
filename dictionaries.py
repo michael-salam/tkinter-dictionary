@@ -45,3 +45,28 @@ igbo_dictionary = {"ehi":"cow",
                    "dalu":"thank you",
                    "onyekuzi":"teacher"
                   }
+
+# Dictionary with 20 Spanish-to-English translations
+spanish_dict = {
+    "hola": "hello",
+    "adios": "goodbye",
+    "por favor": "please",
+    "gracias": "thank you",
+    "si": "yes",
+    "no": "no",
+    "amigo": "friend",
+    "amigos": "friends",
+    "familia": "family",
+    "comida": "food",
+    "agua": "water",
+    "perro": "dog",
+    "gato": "cat",
+    "casa": "house",
+    "escuela": "school",
+    "libro": "book",
+    "coche": "car",
+    "manana": "morning",
+    "noche": "night",
+    "feliz": "happy",
+    "triste": "sad"
+}
