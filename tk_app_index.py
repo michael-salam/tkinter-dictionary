@@ -1,7 +1,7 @@
 import tkinter as tk
 
 # All dictionaries are stored in this file
-from dictionaries import *
+from dictionaries import igbo_dictionary,yourba_dictionary,spanish_dictionary
 
 def handle_navigate_forward(target):
     global current_language
@@ -41,8 +41,13 @@ def translate_word(word, language):
     if language == "spanish":
         if word in spanish_dict:
             print(spanish_dict[word])
-            translation.set(spanish_dict[word])
-
+            translation.set(spanish_dict[word]) 
+            
+      if language == "igbo"     
+         if word in igbo_dictionary:
+             print(igbo_dictionary[word]) 
+             translation.set(igbo_dictionary[word])      
+             
         else:
             print("Not found")
             translation.set("Word not found")
@@ -67,7 +72,7 @@ subheading2 = tk.Label(root, textvariable=subheading2_text, font=("Arial", 15), 
 button_frame = tk.Frame(root)
 yoruba_button = tk.Button(button_frame, text="Yoruba", width=30, pady=5, command=lambda:handle_navigate_forward("yoruba"))
 spanish_button = tk.Button(button_frame, text="Spanish", width=30, pady=5, command=lambda:handle_navigate_forward("spanish"))
-
+igbo_button = tk.Button(button_frame,text="igbo", width=30, pady=5, command=lambda:handle_navigate_forward("igbo"))
 # Pick a button for your desired language
 # Miracle - button2/language2 [DONE]
 # Israel - button3/language3
@@ -96,7 +101,7 @@ spanish_button.pack()
 
 # Make sure your change the name of your button here
 button3.pack()
-button4.pack()
+igbo_button.pack()
 button5.pack()
 
 root.mainloop()
