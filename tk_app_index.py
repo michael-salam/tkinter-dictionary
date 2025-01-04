@@ -27,7 +27,7 @@ def handle_navigate_back():
     igbo_button.pack()
     # Make sure you change the name of your button here
     button4.pack()
-    button5.pack()
+    italian_button.pack()
 
 def translate_word(word, language):
     print(f"Translating {word} from {language}")
@@ -55,6 +55,14 @@ def translate_word(word, language):
         else:
             print("Not found")
             translation.set("Word not found")
+
+    elif language == "italian":
+        if word in italian_dictionary:
+            print(italian_dictionary[word])
+            translation.set(italian_dictionary[word])
+        else:
+            print("Not found")
+            translation.set("Word not found")        
 
     # Check for other languages here (right not we are only checking for the yoruba and spanish words)
     # Make sure your add your dictionary to the ./dictionaries file first 
