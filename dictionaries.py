@@ -70,3 +70,10 @@ spanish_dict = {
     "feliz": "happy",
     "triste": "sad"
 }
+
+ichen_dictionary = {
+    'bwa':'come',
+    'emo':'God',
+    'seh':'well',
+    'cha':'take'
+}
