@@ -71,9 +71,25 @@ spanish_dict = {
     "triste": "sad"
 }
 
-ichen_dictionary = {
-    'bwa':'come',
-    'emo':'God',
-    'seh':'well',
-    'cha':'take'
+italian_dictionary = {
+    'ciao':'hello',
+    'fredo':'cold',
+    'caldo':'hot',
+    'mamma':'mother',
+    'papa':'father',
+    'fratello':'brother',
+    'sarella':'sister',
+    'nonna':'grandmother',
+    'nonno':'grandfather',
+    'figlio':'son',
+    'figlia':'daughter',
+    'bambino':'child',
+    'anno':'year',
+    'momento':'moment',
+    'buongiorno':'morning',
+    'buonasera':'evening',
+    'buonanotte':'afternoon',\
+    'grazie':'thank you',
+    'a presto':'see you soon',
+    'strada':'road'
 }
