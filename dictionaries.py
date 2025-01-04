@@ -70,3 +70,26 @@ spanish_dict = {
     "feliz": "happy",
     "triste": "sad"
 }
+
+italian_dictionary = {
+    'ciao':'hello',
+    'fredo':'cold',
+    'caldo':'hot',
+    'mamma':'mother',
+    'papa':'father',
+    'fratello':'brother',
+    'sarella':'sister',
+    'nonna':'grandmother',
+    'nonno':'grandfather',
+    'figlio':'son',
+    'figlia':'daughter',
+    'bambino':'child',
+    'anno':'year',
+    'momento':'moment',
+    'buongiorno':'morning',
+    'buonasera':'evening',
+    'buonanotte':'afternoon',\
+    'grazie':'thank you',
+    'a presto':'see you soon',
+    'strada':'road'
+}

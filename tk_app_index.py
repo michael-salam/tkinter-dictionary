@@ -27,7 +27,7 @@ def handle_navigate_back():
     igbo_button.pack()
     # Make sure you change the name of your button here
     button4.pack()
-    button5.pack()
+    italian_button.pack()
 
 def translate_word(word, language):
     print(f"Translating {word} from {language}")
@@ -56,6 +56,14 @@ def translate_word(word, language):
             print("Not found")
             translation.set("Word not found")
 
+    elif language == "italian":
+        if word in italian_dictionary:
+            print(italian_dictionary[word])
+            translation.set(italian_dictionary[word])
+        else:
+            print("Not found")
+            translation.set("Word not found")        
+
     # Check for other languages here (right not we are only checking for the yoruba and spanish words)
     # Make sure your add your dictionary to the ./dictionaries file first 
 
@@ -83,7 +91,7 @@ igbo_button = tk.Button(button_frame,text="Igbo", width=30, pady=5, command=lamb
 # Replace the text attribute from "LanguageX" to your desired language
 # Replace the "language" parameters in the lambda functions with your corresponding language
 button4 = tk.Button(button_frame, text="Language4", width=30, pady=5, command=lambda:handle_navigate_forward("language4"))
-button5 = tk.Button(button_frame, text="Language5", width=30, pady=5, command=lambda:handle_navigate_forward("language5"))
+italian_button = tk.Button(button_frame, text="Italian", width=30, pady=5, command=lambda:handle_navigate_forward("italian"))
 
 # Create frame for specific language translation
 translation = tk.StringVar()
@@ -102,6 +110,6 @@ igbo_button.pack()
 
 # Make sure your change the name of your button here
 button4.pack()
-button5.pack()
+italian_button.pack()
 
 root.mainloop()
