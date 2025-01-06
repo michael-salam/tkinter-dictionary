@@ -25,12 +25,15 @@ def handle_navigate_back():
     yoruba_button.pack()
     spanish_button.pack()
     igbo_button.pack()
+    italian_button.pack()
     # Make sure you change the name of your button here
     button4.pack()
-    italian_button.pack()
 
 def translate_word(word, language):
     print(f"Translating {word} from {language}")
+    
+    # Convert the word to lowercase to account for different cases
+    word = word.lower()
 
     if language == "yoruba":
         if word in yoruba_dictionary:
@@ -82,16 +85,16 @@ button_frame = tk.Frame(root)
 yoruba_button = tk.Button(button_frame, text="Yoruba", width=30, pady=5, command=lambda:handle_navigate_forward("yoruba"))
 spanish_button = tk.Button(button_frame, text="Spanish", width=30, pady=5, command=lambda:handle_navigate_forward("spanish"))
 igbo_button = tk.Button(button_frame,text="Igbo", width=30, pady=5, command=lambda:handle_navigate_forward("igbo"))
+italian_button = tk.Button(button_frame, text="Italian", width=30, pady=5, command=lambda:handle_navigate_forward("italian"))
 # Pick a button for your desired language
 # Miracle - button2/language2 [DONE]
 # King David - button3/language3 [DONE]
 # Israel - button4/language4
-# Benedict - button5/language5
+# Benedict - button5/language5 [DONE]
 
 # Replace the text attribute from "LanguageX" to your desired language
 # Replace the "language" parameters in the lambda functions with your corresponding language
 button4 = tk.Button(button_frame, text="Language4", width=30, pady=5, command=lambda:handle_navigate_forward("language4"))
-italian_button = tk.Button(button_frame, text="Italian", width=30, pady=5, command=lambda:handle_navigate_forward("italian"))
 
 # Create frame for specific language translation
 translation = tk.StringVar()
@@ -107,9 +110,9 @@ button_frame.pack()
 yoruba_button.pack()
 spanish_button.pack()
 igbo_button.pack()
+italian_button.pack()
 
 # Make sure your change the name of your button here
 button4.pack()
-italian_button.pack()
 
 root.mainloop()
