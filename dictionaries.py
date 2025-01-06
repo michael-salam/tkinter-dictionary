@@ -88,8 +88,31 @@ italian_dictionary = {
     'momento':'moment',
     'buongiorno':'morning',
     'buonasera':'evening',
-    'buonanotte':'afternoon',\
+    'buonanotte':'afternoon',
     'grazie':'thank you',
     'a presto':'see you soon',
     'strada':'road'
+}
+
+german_dictionary = {
+"good morning":"gueten morgen",
+"good afternoon": "guten tag",
+"good evening": "guten abend",
+"hello": "hallo",
+"come": "herein",
+"go": "gehen sie hinein",
+"how are you": "wie geht es lhnen?",
+"what's your name": "wie ist lhr name?",
+"goodbye": "auf wiedersehen",
+"yes": "ja",
+"no": "nein",
+"sorry": "es tut mir leid",
+"excuse me": "entschuldigung",
+"water": "wasser",
+"help": "hilfe",
+"bathroom": "badezimmer",
+"police": "polizei",
+"food": "essen",
+"doctor": "arzt",
+"tea": "tay"
 }
