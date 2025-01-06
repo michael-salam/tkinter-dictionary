@@ -5,5 +5,8 @@ yoruba_dictionary = {
     "benni": "yes",
     "kilode": "what is it?",
     "ori": "head",
-    "owo": "money"
+    "owo": "money",
+    "rara": "no",
+    "pele": "sorry",
+    "dide": "stand up"
 }
