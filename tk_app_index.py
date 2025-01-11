@@ -106,7 +106,7 @@ german_button = tk.Button(button_frame, text="German", width=30, pady=5, command
 # Create frame for specific language translation
 translation = tk.StringVar()
 translation_frame = tk.Frame(root)
-word_entry = tk.Entry(translation_frame, width=30)
+word_entry = tk.Entry(translation_frame, width=30, font=("Arial", 15))
 translate_button = tk.Button(translation_frame, text="Translate", width=30, pady=5, command=lambda:translate_word(word_entry.get(), current_language))
 translation_label = tk.Label(translation_frame, textvariable=translation, font=("Arial", 15), pady=10)
 back_button = tk.Button(translation_frame, text="Back", width=30, pady=5, command=handle_navigate_back)
