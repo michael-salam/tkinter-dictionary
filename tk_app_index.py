@@ -3,6 +3,15 @@ import tkinter as tk
 # All dictionaries are stored in this file
 from dictionaries import *
 
+def pack_first_page():
+    sub_heading.pack()
+    button_frame.pack()
+    yoruba_button.pack()
+    spanish_button.pack()
+    igbo_button.pack()
+    italian_button.pack()
+    german_button.pack()
+
 def handle_navigate_forward(target):
     global current_language
     current_language = target
@@ -20,14 +29,7 @@ def handle_navigate_back():
     translation.set("")
     word_entry.delete(0, tk.END)
     translation_frame.pack_forget()
-    sub_heading.pack()
-    button_frame.pack()
-    yoruba_button.pack()
-    spanish_button.pack()
-    igbo_button.pack()
-    italian_button.pack()
-    # Make sure you change the name of your button here
-    german_button.pack()
+    pack_first_page()
 
 def translate_word(word, language):
     print(f"Translating {word} from {language}")
@@ -74,12 +76,11 @@ def translate_word(word, language):
         else:
             print("Not found")
             translation.set("word not found")
-    # Check for other languages here (right not we are only checking for the yoruba and spanish words)
-    # Make sure your add your dictionary to the ./dictionaries file first 
 
     else:
         print("Language not supported")
 
+# Initialise tkinter app
 root = tk.Tk()
 root.geometry("720x480")
 root.title("Tkinter Language Dictionary")
@@ -87,23 +88,16 @@ root.title("Tkinter Language Dictionary")
 # Create a heading and subheading
 heading = tk.Label(root, text="Welcome to the Tkinter language dictionary", font=("Arial", 20), pady=20)
 sub_heading = tk.Label(root, text="Select a language to translate from", font=("Arial", 15), pady=10)
+
 # Create buttons frame with buttons for each language
 button_frame = tk.Frame(root)
 yoruba_button = tk.Button(button_frame, text="Yoruba", width=30, pady=5, command=lambda:handle_navigate_forward("yoruba"))
 spanish_button = tk.Button(button_frame, text="Spanish", width=30, pady=5, command=lambda:handle_navigate_forward("spanish"))
 igbo_button = tk.Button(button_frame,text="Igbo", width=30, pady=5, command=lambda:handle_navigate_forward("igbo"))
 italian_button = tk.Button(button_frame, text="Italian", width=30, pady=5, command=lambda:handle_navigate_forward("italian"))
-# Pick a button for your desired language
-# Miracle - button2/language2 [DONE]
-# King David - button3/language3 [DONE]
-# Israel - button4/language4
-# Benedict - button5/language5 [DONE]
-
-# Replace the text attribute from "LanguageX" to your desired language
-# Replace the "language" parameters in the lambda functions with your corresponding language
 german_button = tk.Button(button_frame, text="German", width=30, pady=5, command=lambda:handle_navigate_forward("german"))
 
-# Create frame for specific language translation
+# Create frame for second page - specific language translation
 translation = tk.StringVar()
 translation_frame = tk.Frame(root)
 word_entry = tk.Entry(translation_frame, width=30, font=("Arial", 15))
@@ -111,15 +105,8 @@ translate_button = tk.Button(translation_frame, text="Translate", width=30, pady
 translation_label = tk.Label(translation_frame, textvariable=translation, font=("Arial", 15), pady=10)
 back_button = tk.Button(translation_frame, text="Back", width=30, pady=5, command=handle_navigate_back)
 
+# Pack UI for first page
 heading.pack()
-sub_heading.pack()
-button_frame.pack()
-yoruba_button.pack()
-spanish_button.pack()
-igbo_button.pack()
-italian_button.pack()
-
-# Make sure your change the name of your button here
-german_button.pack()
+pack_first_page()
 
 root.mainloop()
